@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD Mobile Gaming Hub</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold">COD Mobile Hub</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-yellow-500">Home</a>
+                    <a href="#" class="hover:text-yellow-500">Loadouts</a>
+                    <a href="#" class="hover:text-yellow-500">Gameplay</a>
+                    <a href="#" class="hover:text-yellow-500">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-16">
+        <div class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative text-center">
+                <h1 class="text-6xl font-bold mb-4">Welcome to COD Mobile Hub</h1>
+                <p class="text-xl mb-8">Your ultimate destination for COD Mobile gaming content</p>
+                <button class="bg-yellow-500 text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">
+                    Watch Latest Gameplay
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i class="fas fa-crosshairs text-4xl text-yellow-500 mb-4"></i>
+                <h2 class="text-2xl font-bold mb-4">Pro Loadouts</h2>
+                <p>Discover optimized weapon builds and class setups for competitive play.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i class="fas fa-trophy text-4xl text-yellow-500 mb-4"></i>
+                <h2 class="text-2xl font-bold mb-4">Tournament Updates</h2>
+                <p>Stay informed about upcoming tournaments and competitive events.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i class="fas fa-graduation-cap text-4xl text-yellow-500 mb-4"></i>
+                <h2 class="text-2xl font-bold mb-4">Training Guides</h2>
+                <p>Learn advanced tactics and strategies from pro players.</p>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Latest Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/600/400" alt="Gameplay Highlight" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Epic Squad Wipe</h3>
+                        <p class="text-gray-400">Check out this incredible 1v4 clutch in ranked matchmaking!</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/600/400" alt="Gameplay Highlight" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sniper Montage</h3>
+                        <p class="text-gray-400">Top 10 sniper plays of the week featuring incredible quickscopes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-2xl hover:text-yellow-500"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-2xl hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-gray-400">© 2025 COD Mobile Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('bg-opacity-95');
+                } else {
+                    nav.classList.remove('bg-opacity-95');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
